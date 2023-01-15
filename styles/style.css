@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and banner area
+------------------------------- */
+.header {
+    background: rgba(255, 144, 14, 0.1);
+    height: 1350px;
+    width: 100%;
+
+}
+.content {
+    text-align: center;
+    
+}
+.title {
+    font-size: 45px;
+    font-weight: 700;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 70px;
+
+
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+.nav-list, .detail-text {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242; 
+}
+.head-box {
+    text-align: center;
+    margin: 33px 430px;
+}
+.text-2 {
+    font-size: 65px;
+    font-weight: 700;
+}
+.detail-text{
+    color: #727272;
+    margin-left: -20px;
+}
+/* for button 
+-------------- */
+.btn {
+    height: 64px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: 0;
+}
+
+
+ /* ---------------Banner image
+ ----------------------------------- */
+.banner {
+    width: 1440px;
+    height: 700px;
+}
+
+/* main content---
+-------------------------- */
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+/* under main section word color changes----------
+--------------------------------------------- */
+.quick {
+    color: #727272;
+}
+.features {
+    color: #FF900E;
+}
+.main-section {
+    display: flex;
+    text-align: center;
+    margin: 100px;
+}
+.section-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 200px 30px;
+    text-align: left;
+}
+/* another section 
+-----------------------------*/
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+
+}
+.main-text-1{
+    margin: 25px;
+}
+.head-text{
+    border-left:5px solid #FF900E;
+padding-right: 120px;
+}
+.box-text{
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #e7e1e1;
+    border-radius: 8px;
+}
+.decor{
+    position: relative;
+    right: 15px;
+    top: -100px;
+}
+.button {
+    
+    height: 200px;
+    width: 300px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    
+}
+.text-size{
+    font-size: 65px;
+    font-weight: 600;
+
+}
+/* 3rd section start -------------
+------------------------------- */
+.text-3 {
+   padding-right: 800px;
+}
+/* secetion boxes
+----------------------- */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+}
+.box{
+border: 2px solid  #FF900E;
+height: 240px;
+width: 240px;
+text-align: center;
+border-radius: 8px;
+transition: 5s transform;
+
+}
+
+.box:hover {
+    border: 2px solid black;
+    transform: scale(1.5) translatey(100px);
+    background-color: #FF900E;
+    
+}
+.box>img {
+    padding-top: 60px;
+}
+/* 4th section as sponsors column
+------------------------------------------- */
+.sponsor{
+    margin-top: 155px;
+    text-align: center;
+}
+.partner {
+ display: flex;
+ justify-content: space-between;
+ margin: 0 240px;
+}
+.partner img {
+    filter: grayscale(100%);
+}
+/* footer area
+---------------- */
+.footer {
+    margin: 130px 180px;
+    text-align: center;
+    width: 1100px;
+    height: 50px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+/* for mobile ---------------------------------------
+----------------------------------- */
+@media only screen and (max-width:576px){
+    .navbar {display: flex;
+        flex-direction: column;
+        padding: 0;
+      
+    }
+    .header { height: 100%;
+    }
+    .head-box{
+        margin: 0;
+    }
+    .banner {
+        display: none;
+
+    }
+    .main-section {
+        display: flex;
+      flex-direction: column;
+      margin: 30px;
+    }
+
+    .section-content{
+        text-align: center;
+        margin-left: 2px;
+
+    }
+    
+  .btn {
+    margin-left: 0;
+  }
+.button {
+height: 70px;
+margin-bottom: 0;
+margin-left: 0;
+}
+  .team, .section-2, .boxes, .partner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0;
+  }
+  .box, .partner img {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .architect{
+    margin-bottom: -100px;
+  }
+  .architect img {
+    width: 370px;
+    text-align: center;
+    margin: 22px 10px 0 10px;
+
+  }
+  .decor {
+    padding: 20px;
+  }
+  .text-size{
+    font-size: 20px;
+  }
+
+.text-3{
+    padding: 0;
+ 
+}
+.footer {
+    margin: 0;
+width: 95%;
+
+}
+}
